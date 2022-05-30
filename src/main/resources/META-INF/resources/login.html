@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-image: url(png/a.jpg);
+    }
+    #box{
+      height: 300px;
+      width: 300px;
+      background-color: white;
+      border: 1px solid rgb(153, 152, 152);
+      border-radius: 10px;
+      margin: 200px auto;
+    }
+    #top{
+      display: flex;
+      height: 100px;
+      width: 300px;
+      background-color:  rgb(80, 80, 239);
+      border-radius: 10px 10px 0px 0px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #top > div{
+      color: white;
+      font-size: 25px;
+    }
+
+    .mid{
+      display: flex;
+      height: 60px;
+      width: 300px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mid > div{
+      background-color: white;
+      border: 0.5px solid rgb(153, 152, 152);
+      height: 30px;
+      width: 250px;
+    }
+
+    .mid>div>input{
+      outline: none;
+      border: none;
+      height: 25px;
+      width: 200px;
+    }
+
+    #footer{
+      display: flex;
+      height: 80px;
+      width: 300px;
+      border-radius: 0px 0px 10px 10px;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    #footer>button{
+      color: white;
+      height: 35px;
+      width: 250px;
+      font-size: 20px;
+      border: none;
+      background-color: rgb(80, 80, 239);
+      border-radius: 20px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <form action="/login" method="post">
+  <div id="box">
+      <div id="top">
+        <div>
+          系统-登录
+        </div>
+      </div>
+      <div class="mid">
+        <div>
+          <svg t="1653827551395" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4175" width="20" height="20"><path d="M938.304 884.032s-27.84-61.44-125.568-195.072a2859.136 2859.136 0 0 0-91.52-116.8A308.48 308.48 0 0 1 512 654.72a308.864 308.864 0 0 1-209.92-83.136 2891.584 2891.584 0 0 0-92.032 117.44c-97.728 133.696-125.568 195.072-125.568 195.072-16.768 38.208-2.368 75.904 35.456 75.904h782.976c37.824 0 54.912-41.472 35.392-75.968zM512 591.168c140.672 0 254.72-118.016 254.72-263.552C766.72 182.016 652.672 64 512 64S257.28 182.016 257.28 327.552c0 145.6 114.048 263.616 254.72 263.616z" p-id="4176"></path></svg>
+          <input type="text" name="username" placeholder="请输入登录账号"/>
+        </div>
+      </div>
+      <div class="mid">
+        <div>
+          <svg t="1653827593723" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5092" width="20" height="20"><path d="M288 384v-74.666667c0-123.722667 100.266667-224 224-224s224 100.224 224 224v74.666667h10.677333C811.445333 384 864 436.597333 864 501.333333v320c0 64.821333-52.469333 117.333333-117.322667 117.333334H277.333333C212.554667 938.666667 160 886.069333 160 821.333333V501.333333c0-64.821333 52.469333-117.333333 117.322667-117.333333H288z m64 0h320v-74.666667c0-88.426667-71.605333-160-160-160-88.384 0-160 71.626667-160 160v74.666667zM224 501.333333v320c0 29.397333 23.914667 53.333333 53.322667 53.333334H746.666667A53.269333 53.269333 0 0 0 800 821.333333V501.333333c0-29.397333-23.914667-53.333333-53.322667-53.333333H277.333333A53.269333 53.269333 0 0 0 224 501.333333z" p-id="5093"></path></svg>
+          <input type="password" name="password" placeholder="请输入密码"/>
+        </div>
+      </div>
+      <div id="footer">
+        <button type="submit">登录</button>
+      </div>
+  </div>
+</form>
+</body>
+</html>

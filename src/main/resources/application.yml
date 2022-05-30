@@ -1,0 +1,37 @@
+spring:
+#  redis:
+#    host: redis.ihzsr.cn
+#    port: 6379
+#    database: 0
+#    lettuce:
+#      pool:
+#        min-idle: 0
+#        max-active: 8
+#        max-idle: 8
+#    password: Redis#123
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://javadev1.ihzsr.cn:50141/redistoolsdb?useSSL=false
+    username: redistools
+    password: Redistools@123
+mybatis:
+  # mybatis-config.xml配置文件所在的路径
+  #  config-location:
+  # 扫描指定路径下的映射文件（sql）
+  mapper-locations: classpath:com/fc/mapper/*.xml
+  configuration:
+    # 加sql执行日志
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    # 二级缓存
+    cache-enabled: true
+    # 主键回填
+    use-generated-keys: true
+    # 驼峰映射
+    map-underscore-to-camel-case: true
+    # 懒加载
+    lazy-loading-enabled: true
+    # 积极加载
+    aggressive-lazy-loading: false
+  # 别名所在的包
+  type-aliases-package: com.fc.entity
